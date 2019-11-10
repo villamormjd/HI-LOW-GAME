@@ -1,4 +1,4 @@
-from response import responseCodes
+from src.response import responseCodes
 
 
 class BaseHandler(object):

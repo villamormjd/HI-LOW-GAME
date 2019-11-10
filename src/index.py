@@ -1,6 +1,6 @@
 from random import randint as rand
-from basehandler import BaseHandler
-from response import responseCodes
+from src.basehandler import BaseHandler
+from src.response import responseCodes
 
 
 class GameHandle(BaseHandler):
