@@ -59,6 +59,7 @@ class BaseHandler(object):
 
     def exit(self):
         print(f"Thank you for playing. You've finished with {self.get_current_money()}")
+        input()
         exit()
 
     def raise_guess_error(self):

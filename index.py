@@ -5,7 +5,7 @@ from response import responseCodes
 
 class GameHandle(BaseHandler):
 
-    def __init__(self, ):
+    def __init__(self):
         super().__init__()
         self.random_number = None
         self.guess = None
