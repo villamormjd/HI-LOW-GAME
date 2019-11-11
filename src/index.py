@@ -11,12 +11,16 @@ class GameHandle(BaseHandler):
         self.guess = None
         self.response = ""
 
+
+
     def run(self):
         self.random_number = rand(1, 10)
         self.input_guess()
         self.verify_guess()
         self.check_guess()
         self.play_again()
+
+
 
     def input_guess(self):
         self.guess = self.take_guess()
@@ -25,11 +29,15 @@ class GameHandle(BaseHandler):
             print("You must enter a valid guess.")
             self.run()
 
+
+
     def verify_guess(self):
 
         if not self.guess_verified(self.guess):
             print(self.guess_not_verified())
             self.input_guess()
+
+
 
     def check_guess(self):
 
@@ -54,6 +62,8 @@ class GameHandle(BaseHandler):
 
         print(f"You are {result['response_code']}, {result['message']}\n")
         print(result)
+
+
 
     def play_again(self):
 
